@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Naved</title>
+
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <header id="header">
+        <div id="logo" class="head">
+            <span class="top">My</span>Portfolio
+        </div>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#" class="active">About</a></li>
+        </ul>
+    </header>
+
+    <section>
+        <h2 id="text"><span>I see you want to know more</span><br>About Me</h2>
+        <img src="images/bird1.png" id="bird1">
+        <img src="images/bird2.png" id="bird2">
+        <img src="images/forest.png" id="forest">
+        <a href="#" id="btn">Let's go</a>
+        <img src="images/rocks.png" id="rocks">
+        <img src="images/water.png" id="water">
+    </section>
+
+    <div class="sec">
+        <h2>Hello, I'm Naved Hussain Saiyed, and I'm thrilled to have you here!</h2>
+        <p>Dive into my world, and you'll discover a life that's rich with diverse experiences, interests, and a hearty appetite for challenges.</p>
+
+        <h3>A Glimpse into My Journey</h3>
+            <p>I'm a computer science and engineering student with a burning curiosity and an unquenchable thirst for knowledge. My journey in the world of technology began when I was introduced to the fascinating world of programming. From that moment on, I've been on an exhilarating ride through the digital landscape, exploring its many facets.</p>
+        
+        <h3>The Athlete in Me</h3>
+            <p>In 2017 and 2019, I had the exhilarating privilege of stepping onto the football pitch for national team trials. The thrill of competition, the camaraderie of the team, and the lessons of discipline and perseverance have become an integral part of my journey. These lessons have been invaluable in both my academic and personal life.
+            <br>But that's just the beginning of my athletic adventures. As a sprinter, I've raced in the national-level athletics events, blazing through the 100m dash, 200m dash, and 400m relay. The track is where I push my limits and embrace the joy of speed.
+            <br>In 2022, I proudly represented my university at the All India University National Level Volleyball competition. The spike, the block, and the serve are my vocabulary on the court, where teamwork and strategy rule the game.</p>
+        
+        <h3>Diving into New Horizons</h3>
+            <p>Off the field, you'll find me diving into new horizons, quite literally. I'm a passionate swimmer, finding serenity in the water as I glide through challenges with every stroke. Adventures are my constant companion; I seek them out in travel, in the kitchen, and in conversations.</p>
+
+        <h3>The Culinary Explorer</h3>
+            <p>For the past six to seven years, I've donned the chef's hat, experimenting in the kitchen with flavors and cuisines. Cooking isn't just a skill; it's a creative outlet that satisfies both my palate and my curiosity.</p>
+
+        <h3>Education and Ambitions</h3>
+            <p>Currently pursuing my degree in Computer Science and Engineering, I'm dedicated to applying what I learn to real-world projects. My academic pursuits have provided me with a strong foundation in software development, algorithms, and problem-solving.
+            <br>But I'm not just about theories and equations. I believe that technology is not an end in itself; it's a tool to bring ideas to life. My goal is to use my technical skills to create innovative solutions, captivating user experiences, and engaging games that leave a positive impact on people's lives.
+            </p>    
+
+        <h3>A Passion for Web Development and Design</h3>
+            <p>Web development and design are my creative outlets. I find immense satisfaction in crafting visually appealing and user-friendly websites. From the intricacies of HTML, CSS, and JavaScript to the art of UI/UX design, I've immersed myself in the world of digital aesthetics and functionality.</p>
+            
+        <h3>Programming and Game Development</h3>
+            <p>Programming is not just a set of instructions for me; it's a language through which I can build, innovate, and solve problems. Beyond the confines of web development, I've delved into various programming languages and paradigms, each offering a unique perspective on software engineering.
+            <br>Game development, in particular, has captured my imagination. It's a world where code becomes an interactive experience, where creativity knows no bounds. My journey in game development has been filled with exciting challenges and the joy of seeing ideas come to life.</p>
+        
+        <h3>The Listener and Problem Solver</h3>
+            <p>Perhaps it's my calm and collected nature that draws people to share their stories, challenges, and secrets with me. I thrive on solving problems and making new friends. Conversations with me aren't just exchanges of words; they're journeys into understanding and connection.</p>
+
+        <h3>Join Me on This Exciting Journey</h3>
+            <p>This portfolio is a testament to my passion, dedication, and growth in the field of computer science and engineering. Here, you'll find a collection of projects that reflect my skills, creativity, and commitment to excellence.
+            <br>I invite you to explore my work, share in my excitement, and connect with me on this exhilarating journey through the digital realm. Let's collaborate, learn, and innovate together. Your ideas and insights are always welcome!
+            <br>Thank you for visiting, and I look forward to the adventures that await </p>
+    </div>
+
+    <script>
+        let text = document.getElementById('text');
+        let bird1 = document.getElementById('bird1');
+        let bird2 = document.getElementById('bird2');
+        let btn = document.getElementById('btn');
+        let rocks = document.getElementById('rocks');
+        let forest = document.getElementById('forest');
+        let water = document.getElementById('water');
+        let header = document.getElementById('header');
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+
+            text.style.top = 50 + value * -0.5 + '%';
+            bird1.style.top = value * -1.5 +'px';
+            bird1.style.left = value * 2 + 'px';
+            bird2.style.top = value * -1.5 + 'px';
+            bird2.style.left = value * -5 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            rocks.style.top = value * -0.12 + 'px';
+            forest.style.top = value * 0.25 + 'px';
+            header.style.top = value * 0.5 + 'px';
+        })
+    </script>
+</body>
+</html>
